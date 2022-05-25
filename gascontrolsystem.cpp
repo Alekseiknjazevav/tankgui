@@ -95,7 +95,9 @@ void GasControlSystem::setStopPosition()
 #endif
     } else {
         if (m_isCalibrated) {
+            qDebug() << m_currentPosition << "тут мы";
             while(m_currentPosition > 0) {
+
                 moveDown();
             }
 #if DEBUG
@@ -123,6 +125,7 @@ void GasControlSystem::setIdlePosition(const int t)
             if (m_currentPosition > m_idlePosition) {
                 while(m_currentPosition > m_idlePosition) {
                     moveDown();
+
                 }
             } else if (m_currentPosition < m_idlePosition) {
                 while(m_currentPosition < m_idlePosition) {
@@ -168,6 +171,7 @@ void GasControlSystem::setMaxPosition(const int t)
 void GasControlSystem::moveUp()
 {
     Sleep(STEP * 1000);
+    qDebug() << "Еду вперед";
     //m_stepsCount++;
     m_currentPosition++;
 #if DEBUG
@@ -183,6 +187,7 @@ void GasControlSystem::moveUp()
 void GasControlSystem::moveDown()
 {
     Sleep(STEP * 1000);
+    qDebug() << "Еду назад";
     //m_stepsCount--;
     m_currentPosition--;
 #if DEBUG
@@ -245,6 +250,16 @@ void GasControlSystem::calibrationWarning()
 
 GasControlSystem::GasControlSystem()
 {
+}
+
+void GasControlSystem::start_simulation()
+{
+    qDebug() << "Начало автономной работы";
+}
+
+void GasControlSystem::stop_simulation()
+{
+    qDebug() << "Конец автономной работы";
 }
 
 

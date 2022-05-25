@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 6.0.2, 2022-05-25T20:43:57. -->
+<!-- Written by QtCreator 6.0.2, 2022-05-25T15:01:39. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
-  <value type="QByteArray">{40908e9c-64b5-4758-a687-99e14b47adce}</value>
+  <value type="QByteArray">{5510722a-c0d7-45ef-b6f5-beee867778bb}</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -79,7 +79,7 @@
     <value type="bool" key="ClangTools.AnalyzeOpenFiles">true</value>
     <value type="bool" key="ClangTools.BuildBeforeAnalysis">true</value>
     <value type="QString" key="ClangTools.DiagnosticConfig">Builtin.DefaultTidyAndClazy</value>
-    <value type="int" key="ClangTools.ParallelJobs">4</value>
+    <value type="int" key="ClangTools.ParallelJobs">6</value>
     <valuelist type="QVariantList" key="ClangTools.SelectedDirs"/>
     <valuelist type="QVariantList" key="ClangTools.SelectedFiles"/>
     <valuelist type="QVariantList" key="ClangTools.SuppressedDiagnostics"/>
@@ -91,14 +91,14 @@
   <variable>ProjectExplorer.Project.Target.0</variable>
   <valuemap type="QVariantMap">
    <value type="QString" key="DeviceType">Desktop</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop Qt 5.15.0 MSVC2019 64bit</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop Qt 5.15.0 MSVC2019 64bit</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">qt.qt5.5150.win64_msvc2019_64_kit</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop Qt 5.15.2 MSVC2019 64bit</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop Qt 5.15.2 MSVC2019 64bit</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">qt.qt5.5152.win64_msvc2019_64_kit</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">C:\Users\IT-Куб\Downloads\tankgui-20220522T095738Z-001\build-tankgui-Desktop_Qt_5_15_0_MSVC2019_64bit-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">C:\Users\itcub\Documents\build-tankgui-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -106,11 +106,11 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qbs.BuildStep</value>
       <valuemap type="QVariantMap" key="Qbs.Configuration">
        <value type="QString" key="qbs.defaultBuildVariant">debug</value>
-       <value type="QString" key="qbs.profile">qtc_Desktop__662d9d8a</value>
+       <value type="QString" key="qbs.profile">qtc_Desktop__746fd69f</value>
        <value type="bool" key="qbspm.forceProbes">false</value>
       </valuemap>
       <value type="bool" key="Qbs.Install">true</value>
-      <value type="qlonglong" key="Qbs.MaxJobs">8</value>
+      <value type="qlonglong" key="Qbs.MaxJobs">12</value>
      </valuemap>
      <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Сборка</value>
@@ -135,10 +135,10 @@
     <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Отладка</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qbs.QbsBuildConfiguration</value>
-    <value type="QString" key="Qbs.configName">Debug_Desktop__b940f87374066057</value>
+    <value type="QString" key="Qbs.configName">Debug_Desktop__fe8d8788684375a9</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">C:\Users\IT-Куб\Downloads\tankgui-20220522T095738Z-001\build-tankgui-Desktop_Qt_5_15_0_MSVC2019_64bit-Release</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">C:\Users\itcub\Documents\build-tankgui-Desktop_Qt_5_15_2_MSVC2019_64bit-Release</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -146,10 +146,10 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qbs.BuildStep</value>
       <valuemap type="QVariantMap" key="Qbs.Configuration">
        <value type="QString" key="qbs.defaultBuildVariant">release</value>
-       <value type="QString" key="qbs.profile">qtc_Desktop__662d9d8a</value>
+       <value type="QString" key="qbs.profile">qtc_Desktop__746fd69f</value>
       </valuemap>
       <value type="bool" key="Qbs.Install">true</value>
-      <value type="qlonglong" key="Qbs.MaxJobs">8</value>
+      <value type="qlonglong" key="Qbs.MaxJobs">12</value>
      </valuemap>
      <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Сборка</value>
@@ -174,7 +174,7 @@
     <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Выпуск</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qbs.QbsBuildConfiguration</value>
-    <value type="QString" key="Qbs.configName">Release_Desktop__e7ffc3199e018e13</value>
+    <value type="QString" key="Qbs.configName">Release_Desktop__ef8e442c0fb01087</value>
    </valuemap>
    <value type="qlonglong" key="ProjectExplorer.Target.BuildConfigurationCount">2</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.DeployConfiguration.0">
@@ -204,7 +204,7 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/IT-Куб/Downloads/tankgui-20220522T095738Z-001/build-tankgui-Desktop_Qt_5_15_0_MSVC2019_64bit-Debug/Debug_Desktop__b940f87374066057/install-root/bin</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/itcub/Documents/build-tankgui-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug/Debug_Desktop__fe8d8788684375a9/install-root/bin</value>
    </valuemap>
    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>

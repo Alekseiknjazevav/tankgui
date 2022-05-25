@@ -12,6 +12,8 @@ QtApplication {
     files: [
         "gascontrolsystem.cpp",
         "gascontrolsystem.h",
+        "machineinterface.cpp",
+        "machineinterface.h",
         "main.cpp",
         "tankgraph.cpp",
         "tankgraph.h",

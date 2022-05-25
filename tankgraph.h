@@ -11,8 +11,8 @@ public:
     explicit TankGraph(std::string x_axis_name, std::string y_axis_name, int upper_bound, int lower_bound, int graph_step, QWidget *parrent = nullptr);
     virtual ~TankGraph();
     void start_simulation();
-    void set_colibration_status_ho();
-    void set_colibration_status_maxload();
+    void accept_changed_value(int number);
+    void stop_simulation();
 private:
     void drawGraph(std::vector<double> graph, QPen pen, QPainter& painter, std::function<double(double)> mapY);
     void update_status();
@@ -25,6 +25,8 @@ private:
     int m_upper_bound;
     int m_lower_bound;
     int m_graph_step;
+
+
 protected:
     void paintEvent(QPaintEvent *event) final;
 };

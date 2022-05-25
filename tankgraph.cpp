@@ -14,7 +14,7 @@ TankGraph::TankGraph(std::string x_axis_name, std::string y_axis_name, int upper
     m_x_axis_name(x_axis_name), m_y_axis_name(y_axis_name), m_upper_bound(upper_bound), m_lower_bound(lower_bound), m_graph_step(graph_step)
 {
     m_updTimer = new QTimer(this);
-    m_updTimer->setInterval(50);
+    m_updTimer->setInterval(1000);
     connect(m_updTimer, &QTimer::timeout, this, &TankGraph::update_status);
     setSizePolicy(QSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum));
     setMaximumSize(640, 300);
@@ -29,40 +29,32 @@ TankGraph::~TankGraph()
 
 }
 
-void TankGraph::update_status()
+
+void TankGraph::accept_changed_value(int number)
 {
     if (!m_start_simulation)
-        return;
-    m_load_points.push_back(get_random_number());
-    update();
+            return;
+        m_load_points.push_back(number);
+        update();
 }
 
-int TankGraph::get_random_number()
+void TankGraph::stop_simulation()
 {
-    return (qrand() % 700);
+     m_load_points = {};
+     m_start_simulation = false;
+     m_updTimer->stop();
 }
 
 void TankGraph::start_simulation()
 {
-
+    m_start_simulation = true;
     m_updTimer->start();
 
 
 
 }
 
-void TankGraph::set_colibration_status_ho()
-{
 
-         update();
-}
-
-void TankGraph::set_colibration_status_maxload()
-{
-
-         update();
-
-}
 
 void TankGraph::paintEvent(QPaintEvent *event)
 {
@@ -92,7 +84,7 @@ void TankGraph::drawGraph(std::vector<double> graph, QPen pen, QPainter& painter
     {
 
         pen.setWidth(3);
-        pen.setJoinStyle(Qt::RoundJoin);///TODO порабоать с формой графика при снижении!!!
+        pen.setJoinStyle(Qt::RoundJoin);
         painter.setPen(pen);
         int shift = std::max( int(graph.size()-width()) ,0);
         for(int i = 0; i<width()-1; ++i)
@@ -102,4 +94,11 @@ void TankGraph::drawGraph(std::vector<double> graph, QPen pen, QPainter& painter
             painter.drawLine(i, mapY(graph[i+shift]), i+1, mapY(graph[i+shift+1]));
         }
     }
+}
+
+void TankGraph::update_status()
+{
+    if (!m_start_simulation)
+            return;
+    update();
 }

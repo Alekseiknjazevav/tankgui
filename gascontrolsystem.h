@@ -39,7 +39,6 @@ Q_OBJECT
 private:
     //Actuator m_actuator;
     volatile GON_SIGNALS m_signal;
-    volatile int m_frequency;               //целевая уставка частоты, об./мин.
     volatile int m_currentFrequency;        //частота с датчика вращения, об./мин. ???
     const int m_moveStep = STEP;            //шаг актуатора, секунды
     int m_fromIdleToZeroTime = -1;
@@ -55,7 +54,7 @@ private:
     bool m_isCalibrated = false;            //осуществлена ли калибровка
     void startCalibration();                //входим в режим калибровки
     void setStopPosition();
-    void setIdlePosition(const int t);
+    void setIdlePosition(const int t = 0);
     void setMaxPosition(const int t);
     void moveUp();                          //нажимаем газ
     void moveDown();
@@ -71,6 +70,10 @@ private:
 
 public:
     GasControlSystem();
+    volatile int m_frequency;               //целевая уставка частоты, об./мин.
+    void start_simulation();
+    void stop_simulation();
+    void setFrequency(const int f);
 //    GasControlSystem(Actuator actuator)
 //        : m_actuator {actuator} {
 
@@ -101,7 +104,7 @@ signals:
 public slots:
     void resetCalibration();//отпускаем газ
     void breakIn();
-    void setFrequency(const int f);         //принимаем целевую уставку частоты
+             //принимаем целевую уставку частоты
     void setSignal(const GON_SIGNALS s, int time = 0);    //принимаем сигнал => устанавливаем режим работы
     void recieveFrequency(const int f);     //принимаем частоту от датчика
     void run();
